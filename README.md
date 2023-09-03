@@ -1,8 +1,14 @@
-# React + Vite
+### React SPA with Routing 
+---
+### Objective
+This project aims to create a responsive Single-Page Application (SPA) using React. The key objectives include:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### * Responsive Design: Ensure that the application looks and works well on various devices and screen sizes.
 
-Currently, two official plugins are available:
+### * Dynamic Routing: Use dynamic routing to efficiently handle different routes and display relevant content.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### * Conditional Rendering: Utilize conditional rendering techniques to display data based on user interactions or route changes.
+
+### * State Management: Manage component state effectively using React hooks to enhance the user experience.
+
+### * API Integration: Retrieve data from an API and display it within the application to provide dynamic and up-to-date content.
