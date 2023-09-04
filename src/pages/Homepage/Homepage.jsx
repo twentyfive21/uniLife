@@ -2,6 +2,7 @@ import {React, useEffect} from 'react'
 
 function Homepage() {
 
+  
 useEffect(()=>{
    const fetchData = async () =>{
         try{
