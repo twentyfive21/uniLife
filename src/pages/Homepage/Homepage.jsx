@@ -1,5 +1,6 @@
 import {React, useEffect} from 'react'
 import './Homepage.css'
+import Banner from '../../components/Banner/Banner'
 
 function Homepage() {
   
@@ -19,7 +20,7 @@ useEffect(()=>{
 
   return (
     <div>
-    <p>Homepage</p>
+    <Banner />
     </div>
   )
 }
