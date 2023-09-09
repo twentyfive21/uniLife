@@ -1,4 +1,5 @@
 import {React, useEffect} from 'react'
+import './Homepage.css'
 
 function Homepage() {
   
@@ -18,7 +19,7 @@ useEffect(()=>{
 
   return (
     <div>
-    {}
+    <p>Homepage</p>
     </div>
   )
 }
