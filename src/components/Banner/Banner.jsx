@@ -1,6 +1,6 @@
 import React from 'react'
 import './Banner.css'
-import banner from '../../assets/header/banner.png'
+import banner from '../../assets/header/banner2.jpeg'
 
 function Banner() {
   return (
