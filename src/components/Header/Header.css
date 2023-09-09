@@ -1,0 +1,27 @@
+header {
+    color: #FFFFFF;
+    background-color: #00A2E1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 50px;
+}
+header h2 {
+    font-weight: 400;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+}
+.header-horz {
+    display: flex;
+    align-items: center;
+}
+header img {
+    padding: 0px 10px;
+}
+.header-right {
+    display: flex;
+    margin-top: 3px;
+}
+.header-right div {
+    padding: 0px 15px;
+}
