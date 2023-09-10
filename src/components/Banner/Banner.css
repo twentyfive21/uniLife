@@ -12,6 +12,10 @@
 .banner-container h1 {
     font-weight: 500;
     font-size: 3rem;
+    margin-bottom: 10px;
+}
+.banner-container h1, p {
+    text-shadow: 2px 2px 2px grey;
 }
 .banner-container p {
     font-weight: 400;
@@ -22,5 +26,5 @@
     width: 100%;
     height: 480px;
     object-fit: cover;
-    filter: blur(.5px); 
+    -webkit-user-drag: none;
 }
