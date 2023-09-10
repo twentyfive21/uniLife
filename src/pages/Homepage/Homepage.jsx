@@ -1,6 +1,7 @@
 import {React, useEffect} from 'react'
 import './Homepage.css'
 import Banner from '../../components/Banner/Banner'
+import select from '../../assets/header/select.png'
 
 function Homepage() {
   
@@ -19,8 +20,17 @@ useEffect(()=>{
 }, [])
 
   return (
-    <div>
+    <div className='homepage-box'>
     <Banner />
+    <div className='form-container'>
+    <form>
+      <img src={select} className='arrow' alt='arrow'/>
+      <select>
+        <option>Search by City</option>
+      </select>
+      <button>Find Homes</button>
+    </form>
+    </div>
     </div>
   )
 }
