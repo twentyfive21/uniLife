@@ -1,0 +1,48 @@
+.homepage-box {
+    position: relative;
+}
+.form-container {
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form-container form {
+    background-color: #FFFFFF;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+    border-radius: 24px;
+    box-shadow: 0px 4px 20px 0px #00000014;
+    border: 1px solid #CED3D8;
+}
+.form-container select {
+    width: 55%;
+    color: black;
+    border: 1px solid #CED3D8;
+    padding: 0px 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+}
+.form-container select, button {
+    letter-spacing: 1px;
+    height: 48px;
+    border-radius: 12px;
+}
+.form-container button{
+    width: 25%;
+    border: none;
+    background-color: #00A2E1;
+    color: #FFFFFF;
+}
+.arrow {
+    position: absolute;
+    height: 7px;
+    z-index: 1;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
