@@ -25,3 +25,18 @@ header img {
 .header-right div {
     padding: 0px 15px;
 }
+@media (max-width: 500px) {
+    header img {
+        padding: 0px 2px;
+    }
+    header {
+        padding: 5px;
+    }
+    .header-right div {
+        padding: 0px 6px;
+    }
+    header h2 {
+        letter-spacing: 0px;
+        font-size: 1rem;
+    }
+}
