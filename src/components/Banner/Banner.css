@@ -15,7 +15,7 @@
     margin-bottom: 10px;
 }
 .banner-container h1, p {
-    text-shadow: 2px 2px 2px grey;
+    text-shadow: 1px 1px 1px black;
 }
 .banner-container p {
     font-weight: 400;
