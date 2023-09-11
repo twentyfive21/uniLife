@@ -84,3 +84,8 @@
     margin-bottom: 10px;
     font-weight: 600;
 }
+.error {
+   color: lightcoral;
+   letter-spacing: 1px;
+   margin-top: 100px;
+}
