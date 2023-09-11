@@ -12,7 +12,7 @@ const [cities, setCities] = useState([]);
 useEffect(()=>{
    const fetchData = async () =>{
         try{
-            const res = await fetch('https://unilife-server.herokuapp.com/cities');
+            const res = await fetch('https://unilife-server.herokuapp.com/cities?limit=20');
             const json = await res.json();
             console.log(json)
             setCities(json.response)
