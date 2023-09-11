@@ -34,6 +34,7 @@ useEffect(()=>{
       <img src={select} className='arrow'alt='arrow'/>
       <select>
         <option>Search by City</option>
+        {cities.map(city => <option key={city._id}>{city.name}</option>)}
       </select>
       <button>Find Homes</button>
     </form>
@@ -43,7 +44,6 @@ useEffect(()=>{
     <h2>Student accommodations in our top cities </h2>
     {error && <h2 className='error'>The site is currently down. Please visit back later!</h2>}
       <section className='cities-container'>
-        {/* {cities.map(city => <p key={city._id}>{city.name}</p>)} */}
       {/* <div className='city-card'>
         <div className='city-details'>
         <h2>Leeds</h2>
