@@ -44,13 +44,15 @@ useEffect(()=>{
     <h2>Student accommodations in our top cities </h2>
     {error && <h2 className='error'>The site is currently down. Please visit back later!</h2>}
       <section className='cities-container'>
-      {/* <div className='city-card'>
-        <div className='city-details'>
-        <h2>Leeds</h2>
-        <p>2 properties</p>
-        </div>
-      <img src={city} alt='city' />
-      </div> */}
+        {cities.slice(0, 18).map(city => 
+          <div className='city-card' key={city._id}>
+          <div className='city-details'>
+          <h2>{city.name}</h2>
+          <p>{city.property_count} properties</p>
+          </div>
+          <img src={city.image_url} alt='city' />
+          </div>
+        )}
       </section>
     </section>
     </div>
@@ -58,3 +60,11 @@ useEffect(()=>{
 }
 
 export default Homepage
+
+{/* <div className='city-card'>
+<div className='city-details'>
+<h2 key={city._id}>{city.name}</h2>
+<p>{city.property_count} properties</p>
+</div>
+<img src={city.image_url} alt='city' />
+</div> */}
