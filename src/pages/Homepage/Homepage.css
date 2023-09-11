@@ -60,11 +60,12 @@
     column-gap: 25px;
     row-gap: 35px;
     justify-items: center;
-    padding: 0px 30px;
+    padding: 0px 15px;
 }
 .cities-container img {
-    /* width: 400px;
-    height: 300px; */
+    width: 400px;
+    height: 300px;
+    border-radius: 24px;
 }
 .city-card {
     position: relative;
@@ -79,6 +80,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFFFFF;
+    text-shadow: 1px 1px 1px black;
 }
 .city-details h2 {
     margin-bottom: 10px;
@@ -89,3 +91,39 @@
    letter-spacing: 1px;
    margin-top: 100px;
 }
+@media (max-width: 1024px) {
+    .cities-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 40px;
+        padding: 0px 50px;
+    }
+}
+@media (max-width: 915px) {
+    .cities-container {
+        padding: 0px 30px;
+    }
+}
+@media (max-width: 850px) {
+    .cities-container img {
+        width: 320px;
+        height: 250px;
+        border-radius: 24px;
+    }
+}
+@media (max-width: 540px) {
+    .cities-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cities-container img {
+        width: 400px;
+        height: 300px;
+    }
+}
+@media (max-width: 500px) {
+    .cities-container img {
+        width: 300px;
+        height: 250px;
+    }
+}
+/* fix extra spacing on right side for mobile  */
