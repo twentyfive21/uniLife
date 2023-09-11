@@ -28,3 +28,12 @@
     object-fit: cover;
     -webkit-user-drag: none;
 }
+@media (max-width: 500px) {
+    .banner-container h1 {
+        font-size: 2rem;
+    }
+    .banner-container p {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+}
