@@ -1,7 +1,7 @@
-### React SPA with Routing 
+# React SPA with Routing 
 ---
 ### Disclaimer this API can be down at times and a error message will be displayed when the endpoint cannot be fetched. 
-### Objective
+## Objective
 This project aims to create a responsive Single-Page Application (SPA) using React. The key objectives include:
 
 * Responsive Design: Ensure that the application looks and works well on various devices and screen sizes.
