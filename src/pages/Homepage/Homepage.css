@@ -125,5 +125,29 @@
         width: 300px;
         height: 250px;
     }
+    .arrow {
+        left: 54%;
+    }
+    .cities-section h2{
+        font-size: 1.2rem;
+    }
 }
-/* fix extra spacing on right side for mobile  */
+@media (max-width: 400px) {
+    .cities-container img {
+        width: 300px;
+        height: 250px;
+    }
+    .arrow {
+        left: 53%;
+    }
+    .form-container select {
+        padding: 0px 10px;
+    }
+    .form-container button{
+        width: 35%;
+    }
+    .form-container form {
+        width: 95vw;
+        height: 100px;
+    }
+}
