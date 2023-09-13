@@ -44,7 +44,7 @@ useEffect(()=>{
     <h2>Student accommodations in our top cities </h2>
     {error && <h2 className='error'>The site is currently down. Please visit back later!</h2>}
       <section className='cities-container'>
-        {cities.slice(0, 18).map(city => 
+        {cities.slice(0, 9).map(city => 
           <div className='city-card' key={city._id}>
           <div className='city-details'>
           <h2>{city.name}</h2>
