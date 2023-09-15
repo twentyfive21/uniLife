@@ -149,7 +149,7 @@
         font-size: 1.2rem;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 415px) {
     .cities-container img {
         width: 300px;
         height: 250px;
@@ -161,10 +161,10 @@
         padding: 0px 10px;
     }
     .form-container button{
-        width: 35%;
+        width: 37%;
     }
     .form-container form {
-        width: 95vw;
-        height: 100px;
+        width: 86vw;
+        height: 90px;
     }
 }
