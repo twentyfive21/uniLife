@@ -13,14 +13,13 @@
     font-weight: 500;
     font-size: 3rem;
     margin-bottom: 10px;
-}
-.banner-container h1, p {
     text-shadow: 1px 1px 1px black;
 }
 .banner-container p {
     font-weight: 400;
     font-size: 1.2rem;
     letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
 }
 .banner-container img {
     width: 100%;
