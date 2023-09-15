@@ -27,3 +27,18 @@
   font-size: 1rem;
   font-weight: 400;
 }
+/* bottom container best & fav  */
+.bc-column {
+    display: flex;
+    flex-direction: column;
+}
+.bc-box {
+    display: flex;
+    width: 50vw;
+}
+.bCompare-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 50px;
+}

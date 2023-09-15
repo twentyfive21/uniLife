@@ -2,7 +2,6 @@ import {React, useEffect, useState} from 'react'
 import './Homepage.css'
 import Banner from '../../components/Banner/Banner'
 import select from '../../assets/header/select.png'
-import city from '../../assets/middle/city.png'
 import HomeCompare from '../../components/HomeCompare/HomeCompare'
 
 function Homepage() {

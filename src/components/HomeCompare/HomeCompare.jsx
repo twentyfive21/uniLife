@@ -1,6 +1,7 @@
 import React from 'react'
 import './HomeCompare.css'
 import data from '../../utils/data.js'
+import man from '../../assets/middle/man.png'
 
 function HomeCompare() {
   return (
@@ -10,7 +11,7 @@ function HomeCompare() {
         <section className='top-compare'>
         {data[0].info.map(item => (
           <div key={item.id} className='compare-card'>
-            <img src={item.img} />
+            <img src={item.img} alt={item.title}/>
             <div>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
@@ -19,8 +20,21 @@ function HomeCompare() {
         ))}
         </section>
       </section>
-      <section>
-        
+      <section className='bCompare-container'>
+        <div>
+          {
+            data[1].info.map(item => (
+              <div key={item.id} className='bc-box'> 
+              <img src={item.img} alt={item.title}/>
+              <div className='bc-column'>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+              </div>
+            ))
+          }
+        </div>
+        <img src={man} alt='man holding phone'/>
       </section>
     </div>
   )
