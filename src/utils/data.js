@@ -1,6 +1,8 @@
 import search from '../assets/middle/earth.png'
 import compare from '../assets/middle/compare.png'
 import bills from '../assets/middle/bills.png'
+import best from '../assets/middle/best.png'
+import heart from '../assets/middle/heart.png'
 const data = [
     {
        info: 
@@ -25,6 +27,23 @@ const data = [
         }
        ]
     },
+    {
+      info:
+      [
+         {
+            id: 3,
+            img: best,
+            title: 'Best selection',
+            text: 'Best selection of student accommodations. Never been easier to find a home that’s right for you.'
+         },
+         {
+            id: 4,
+            img: heart,
+            title: 'Your favorite',
+            text: 'Shortlist your favourite properties and send enquiries in one click.'
+         },
+      ]
+    }
 
 ]
 export default data 
