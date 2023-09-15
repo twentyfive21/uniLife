@@ -3,6 +3,7 @@ import './Homepage.css'
 import Banner from '../../components/Banner/Banner'
 import select from '../../assets/header/select.png'
 import city from '../../assets/middle/city.png'
+import HomeCompare from '../../components/HomeCompare/HomeCompare'
 
 function Homepage() {
 
@@ -44,7 +45,7 @@ useEffect(()=>{
     <h2>Student accommodations in our top cities </h2>
     {error && <h2 className='error'>The site is currently down. Please visit back later!</h2>}
       <section className='cities-container'>
-        {cities.slice(0, 9).map(city => 
+        {cities.slice(0,9).map(city => 
           <div className='city-card' key={city._id}>
           <div className='city-details'>
           <h2>{city.name}</h2>
@@ -53,6 +54,10 @@ useEffect(()=>{
           <img src={city.image_url} alt='city' />
           </div>
         )}
+        <button>See All Cities</button>
+      </section>
+      <section>
+        <HomeCompare />
       </section>
     </section>
     </div>
@@ -60,11 +65,3 @@ useEffect(()=>{
 }
 
 export default Homepage
-
-{/* <div className='city-card'>
-<div className='city-details'>
-<h2 key={city._id}>{city.name}</h2>
-<p>{city.property_count} properties</p>
-</div>
-<img src={city.image_url} alt='city' />
-</div> */}

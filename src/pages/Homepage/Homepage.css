@@ -55,12 +55,13 @@
     margin-bottom: 30px;
 }
 .cities-container {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 25px;
     row-gap: 35px;
     justify-items: center;
-    padding: 0px 15px;
+    margin-bottom: 120px;
 }
 .cities-container img {
     width: 400px;
@@ -86,6 +87,16 @@
     margin-bottom: 10px;
     font-weight: 600;
 }
+.cities-container button {
+    position: absolute;
+    background-color: #3A5295;
+    border-radius: 12px;
+    width: 200px;
+    height: 48px;
+    color: #FFFFFF;
+    font-weight: 600;
+    top: 103%;
+}
 .error {
    color: lightcoral;
    letter-spacing: 1px;
@@ -97,6 +108,9 @@
         column-gap: 10px;
         row-gap: 40px;
         padding: 0px 50px;
+    }
+    .cities-container div:nth-child(9) {
+        display: none;
     }
 }
 @media (max-width: 915px) {
@@ -118,6 +132,9 @@
     .cities-container img {
         width: 400px;
         height: 300px;
+    }
+    .cities-container button {
+        top: 101%;
     }
 }
 @media (max-width: 500px) {
