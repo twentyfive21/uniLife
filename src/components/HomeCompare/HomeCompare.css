@@ -1,8 +1,13 @@
+.compare-container {
+    margin-top: 150px;
+}
 .top-compare {
     display: flex;
+    justify-content: center;
 }
 .top-compare-box {
-    margin: 140px 35px 0px 35px;
+    width: 88vw;
+    margin: 0 auto;
     background-color: #F6FAFD;
     padding: 70px 15px;
     border-radius: 24px;
@@ -28,17 +33,23 @@
   font-weight: 400;
 }
 /* bottom container best & fav  */
-.bc-column {
-    display: flex;
-    flex-direction: column;
+.bc-column h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.bc-column p {
+    font-size: 1.4rem;
 }
 .bc-box {
     display: flex;
-    width: 50vw;
+    /* width: 50vw; */
+    margin: 50px 10px;
+}
+.bc-box img {
+    margin-right: 20px;
 }
 .bCompare-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 20px 50px;
+    justify-content: center;
 }

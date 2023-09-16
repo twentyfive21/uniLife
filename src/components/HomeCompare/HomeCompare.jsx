@@ -21,7 +21,7 @@ function HomeCompare() {
         </section>
       </section>
       <section className='bCompare-container'>
-        <div>
+        <div className='left-bcompare'>
           {
             data[1].info.map(item => (
               <div key={item.id} className='bc-box'> 
