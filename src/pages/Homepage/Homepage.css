@@ -56,16 +56,13 @@
 }
 .cities-container {
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 25px;
-    row-gap: 35px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 120px;
+    gap: 50px;
 }
 .cities-container img {
-    width: 400px;
-    height: 300px;
     border-radius: 24px;
 }
 .city-card {
@@ -102,17 +99,72 @@
    letter-spacing: 1px;
    margin-top: 100px;
 }
-@media (max-width: 1024px) {
-    .cities-container {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 10px;
-        row-gap: 40px;
-        padding: 0px 50px;
+@media (max-width: 2400px) {
+    .cities-container img {
+        width: 620px;
+        height: 400px;
     }
+}
+@media (max-width: 2100px) {
+    .cities-container img {
+        width: 600px;
+    }
+}
+@media (max-width: 2000px) {
+    .cities-container img {
+        width: 550px;
+    }
+}
+@media (max-width: 1870px) {
+    .cities-container img {
+        width: 520px;
+    }
+}
+
+@media (max-width: 1790px) {
+    .cities-container img {
+        width: 500px;
+    }
+}
+@media (max-width: 1690px) {
+    .cities-container img {
+        width: 480px;
+    }
+}
+@media (max-width: 1600px) {
+    .cities-container img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .cities-container img {
+        width: 380px;
+        height: 300px;
+    }
+    .cities-container {
+        gap: 20px;
+    }
+}
+@media (max-width: 1250px) {
+    .cities-container img {
+        width: 360px;
+        height: 300px;
+    }
+}
+@media (max-width: 1150px) {
+    .cities-container img {
+        width: 340px;
+        height: 280px;
+    }
+}
+@media (max-width: 1059px) {
     .cities-container div:nth-child(9) {
         display: none;
     }
 }
+
 @media (max-width: 915px) {
     .cities-container {
         padding: 0px 30px;
@@ -126,9 +178,6 @@
     }
 }
 @media (max-width: 540px) {
-    .cities-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
     .cities-container img {
         width: 400px;
         height: 300px;
