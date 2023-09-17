@@ -70,6 +70,8 @@
 }
 .cities-container img {
     border-radius: 24px;
+    width: 700px;
+    height: 400px; 
 }
 .city-card {
     position: relative;

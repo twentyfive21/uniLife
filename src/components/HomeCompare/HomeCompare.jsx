@@ -35,7 +35,7 @@ function HomeCompare() {
           }
           <button>Search & Compare</button>
         </div>
-        <img src={man} alt='man holding phone'/>
+        <img src={man} className='man' alt='man holding phone'/>
       </section>
     </div>
   )
