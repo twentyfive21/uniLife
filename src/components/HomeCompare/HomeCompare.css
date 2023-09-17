@@ -111,7 +111,7 @@
     .bCompare-container {
         padding-left: 70px;
     }
-    }
+}
 @media (max-width: 1395px) {
         .man {
         top: 66.1%;
@@ -151,4 +151,70 @@
     .top-compare {
         flex-direction: column;
     } 
+}
+@media (max-width: 650px) {
+    .bc-box:nth-child(1) img{
+        width: 60px;
+        height: 65px;
+    }
+    .bc-box:nth-child(2) img{
+        width: 55px;
+        height: 45px;
+    }
+    .bc-column h3 {
+        font-size: 1.5rem;
+    }
+    .bc-column p {
+        font-size: 1rem;
+        color: #383838;
+        line-height: 20px;
+    }
+    .left-bcompare button {
+        width: 220px;
+        height: 42px;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 650px) {
+    .bc-box:nth-child(1) img{
+        width: 60px;
+        height: 65px;
+    }
+    .bc-box:nth-child(2) img{
+        width: 55px;
+        height: 45px;
+    }
+    .bc-column h3 {
+        font-size: 1.5rem;
+    }
+    .bc-column p {
+        font-size: 1rem;
+        color: #383838;
+        line-height: 20px;
+    }
+    .left-bcompare button {
+        width: 230px;
+        height: 42px;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 448px) {
+    .left-bcompare button {
+       margin-left: 30px;
+    }
+}
+@media (max-width: 375px) {
+    .bc-box img{
+       display: none;
+    }
+    .bc-column{
+       display: none;
+    }
+     .bCompare-container{
+        height: 0px;
+     }
+     .left-bcompare button {
+        margin-bottom: 150px;
+        margin-right: 25px;
+     }
 }

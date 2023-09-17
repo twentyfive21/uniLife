@@ -5,8 +5,9 @@
     align-items: center;
     justify-content: space-around;
     background-color: #00A2E1;
-    height: 374px;
+    height: auto;
     color: #FFFFFF;
+    padding: 50px 0px;
 }
 .tleft {
     width: 440px;
@@ -69,4 +70,80 @@
     color: #FFFFFF99;
     height: 97px;
     font-size: 1.1rem;
+}
+
+@media (max-width: 1000px) {
+    .top-footer{
+        flex-direction: column;   
+    }
+    .tleft h2 {
+        font-size: 2.3rem;
+        margin-bottom: 5px;
+    }
+    .tleft {
+        width: 80vw;
+    }
+    .tleft p {
+       margin-bottom: 15px;
+    }
+    .tleft input {
+        height: 38px;
+        width: 300px;
+        font-size: 1rem;
+        margin-bottom: 7px;
+    }
+    .tright h2 {
+        font-size: 2rem;
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+    .socials {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+    }
+    .tright {
+        width: 80vw;
+    }
+}
+@media (max-width: 550px) {
+    .tleft h2 {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+    .tleft p {
+       font-size: 1rem;
+     }
+     .tleft input {
+        height: 30px;
+        width: 70vw;
+        font-size: 1rem;
+    }
+    .tright h2 {
+        font-size: 1.5rem;
+    }
+    .tright {
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1000px) {
+    .bleft {
+        flex-direction: column;
+        padding-right: 50px;
+    }
+    .bottom-footer {
+        height: 150px;
+        font-size: 1rem;
+        padding:0px 30px;
+    }
+    .bleft p {
+        margin-right: 0px;
+    }
+    .bleft p {
+        margin-bottom: 8px;
+    }
+    .bright p{
+        margin-right: 5px; 
+    }
 }
