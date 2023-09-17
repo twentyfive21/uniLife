@@ -39,9 +39,13 @@
 .bc-column h3 {
     font-size: 2rem;
     font-weight: 500;
+    margin-bottom: 15px;
 }
 .bc-column p {
     font-size: 1.4rem;
+    color: #383838;
+    font-weight: 400;
+    line-height: 32px;
 }
 .bc-box {
     display: flex;
@@ -61,7 +65,16 @@
 .bCompare-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 150px;
+    margin: 90px 0px;
+    position: relative;
+}
+.man {
+    position: absolute;
+    top: 63.6%;
+    left: 80%;
+    transform: translate(-50%, -50%);
 }
 .left-bcompare button {
     width: 300px;
@@ -77,4 +90,65 @@
 }
 .left-bcompare button:hover {
     background-color: #00A2E1;
+}
+@media (min-width: 1817px) {
+    .man {
+    display: none;
+    }
+    .bCompare-container {
+        justify-content: center;
+        padding-left: 0px;
+    }
+    .left-bcompare button {
+        margin-left: 100px;
+    }
+    }
+@media (max-width: 1401px) {
+    .man {
+    top: 63.5%;
+    left: 77%;
+    }
+    .bCompare-container {
+        padding-left: 70px;
+    }
+    }
+@media (max-width: 1395px) {
+        .man {
+        top: 66.1%;
+        }
+        .bCompare-container {
+            padding-left: 70px;
+        }
+    }
+@media (max-width: 1280px) {
+    .man {
+    top: 66%;
+    }
+    }
+@media (max-width: 1225px) {
+        .man {
+        height: 450px;
+        top: 70.7%;
+        left: 76%;
+        }
+        .bCompare-container {
+            padding-left: 50px;
+        }
+    }
+@media (max-width: 1010px) {
+    .man {
+        display: none;
+    }
+    .bCompare-container {
+        justify-content: center;
+        padding-left: 0px;
+    }
+    .left-bcompare button {
+        margin-left: 75px;
+    }
+    }
+@media (max-width: 890px) {
+    .top-compare {
+        flex-direction: column;
+    } 
 }
