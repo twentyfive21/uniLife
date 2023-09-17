@@ -33,6 +33,9 @@
   font-weight: 400;
 }
 /* bottom container best & fav  */
+.bc-column {
+    width: 40vw;
+}
 .bc-column h3 {
     font-size: 2rem;
     font-weight: 500;
@@ -42,14 +45,36 @@
 }
 .bc-box {
     display: flex;
-    /* width: 50vw; */
     margin: 50px 10px;
 }
 .bc-box img {
-    margin-right: 20px;
+    margin-right: 40px;
+}
+.bc-box:nth-child(1) img{
+    width: 65px;
+    height: 75px;
+}
+.bc-box:nth-child(2) img{
+    width: 65px;
+    height: 58px;
 }
 .bCompare-container {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.left-bcompare button {
+    width: 300px;
+    height: 55px;
+    border-radius: 12px;
+    border: none;
+    background-color: #3A5295;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    margin-left: 120px;
+    letter-spacing: 2px;
+    padding-top: 3px;
+}
+.left-bcompare button:hover {
+    background-color: #00A2E1;
 }
