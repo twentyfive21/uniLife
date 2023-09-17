@@ -33,6 +33,7 @@ function HomeCompare() {
               </div>
             ))
           }
+          <button>Search & Compare</button>
         </div>
         <img src={man} alt='man holding phone'/>
       </section>

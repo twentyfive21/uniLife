@@ -39,6 +39,12 @@
     border: none;
     background-color: #00A2E1;
     color: #FFFFFF;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding-top: 5px;
+}
+.form-container button:hover {
+    background-color: #3A5295;
 }
 .arrow {
     position: absolute;
@@ -93,6 +99,13 @@
     color: #FFFFFF;
     font-weight: 600;
     top: 103%;
+    border: none;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    padding-top: 5px;
+}
+.cities-container button:hover{
+    background-color: #00A2E1;
 }
 .error {
    color: lightcoral;
