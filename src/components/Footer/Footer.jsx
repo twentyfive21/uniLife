@@ -33,9 +33,9 @@ function Footer() {
         </section>
         <section className='bottom-footer'>
             <div className='bleft'>
-                <p>About Us</p>
-                <p>Terms & Conditions</p>
-                <p>Privacy & Cookie Policies</p>
+                <a href='https://www.figma.com/file/Sn5caRds8rHtoOq6sLfrc0/UniLife?type=design&node-id=0-1&mode=design&t=jG7HbsqvBwS8ploY-0'>About Us</a>
+                <a href='https://github.com/twentyfive21'>Terms & Conditions</a>
+                <a href='https://www.apccs.police.uk/privacy-and-cookie-policy/'>Privacy & Cookie Policies</a>
             </div>
             <div className='bright'>
                 <p>2023</p>
