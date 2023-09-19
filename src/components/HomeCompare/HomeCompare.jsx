@@ -2,6 +2,7 @@ import React from 'react'
 import './HomeCompare.css'
 import data from '../../utils/data.js'
 import man from '../../assets/middle/man.png'
+import { Link } from 'react-scroll';
 
 function HomeCompare() {
   return (
@@ -33,7 +34,7 @@ function HomeCompare() {
               </div>
             ))
           }
-          <button>Search & Compare</button>
+          <Link to='header'spy={true} smooth={true} duration={1000} ><button id='header'>Search & Compare</button></Link>
         </div>
         <img src={man} className='man' alt='man holding phone'/>
       </section>

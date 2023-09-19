@@ -11,7 +11,7 @@ const navigate = useNavigate()
 
   return (
     <header>
-    <section className='header-horz'>
+    <section id='header' className='header-horz'>
         <img src={house} alt='house icon'/>
         <h2>UniLife</h2>
     </section>
