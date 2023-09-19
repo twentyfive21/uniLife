@@ -64,7 +64,7 @@
 .bottom-footer {
     display: flex;
     align-items: center;
-    padding:0px 100px;
+    padding: 20px 20px;
     justify-content: space-between;
     background-color: #000000;
     color: #FFFFFF99;
@@ -105,7 +105,25 @@
     .tright {
         width: 80vw;
     }
+    .bleft {
+        flex-direction: column;
+        padding-right: 50px;
+    }
+    .bottom-footer {
+       height: auto;
+       font-size: 1rem;
+    }
+    .bleft p {
+        margin-right: 0px;
+    }
+    .bleft p {
+        margin-bottom: 8px;
+    }
+    .bright p{
+        margin-right: 5px; 
+    }
 }
+
 @media (max-width: 550px) {
     .tleft h2 {
         font-size: 1.5rem;
@@ -125,25 +143,5 @@
     .tright {
         width: 80vw;
         margin-bottom: 20px;
-    }
-}
-@media (max-width: 1000px) {
-    .bleft {
-        flex-direction: column;
-        padding-right: 50px;
-    }
-    .bottom-footer {
-        height: 150px;
-        font-size: 1rem;
-        padding:0px 30px;
-    }
-    .bleft p {
-        margin-right: 0px;
-    }
-    .bleft p {
-        margin-bottom: 8px;
-    }
-    .bright p{
-        margin-right: 5px; 
     }
 }
