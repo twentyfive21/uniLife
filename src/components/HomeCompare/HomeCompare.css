@@ -202,6 +202,14 @@
     .left-bcompare button {
        margin-left: 30px;
     }
+    .compare-card img {
+        height: 85px;
+     }
+     .compare-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 7px;
+        letter-spacing: 1.5px;
+    }
 }
 @media (max-width: 375px) {
     .bc-box img{
