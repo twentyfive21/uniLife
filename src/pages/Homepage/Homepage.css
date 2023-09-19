@@ -226,7 +226,8 @@
         padding: 0px 10px;
     }
     .form-container button{
-        width: 37%;
+        width: 35%;
+        letter-spacing: 0px;
     }
     .form-container form {
         width: 86vw;

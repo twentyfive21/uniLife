@@ -14,6 +14,7 @@ header h2 {
 .header-horz {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 header img {
     padding: 0px 10px;
