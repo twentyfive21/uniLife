@@ -1,18 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Footer.css'
 import fb from '../../assets/contact/fb.png'
 import insta from '../../assets/contact/insta.png'
 import twitter from '../../assets/contact/twitter.png'
 
 function Footer() {
+
+    const [email, setEmail] = useState('');
+    
+    const handleEmail = (e) => {
+        e.preventDefault()
+    }
+    const handleInput = (e) => {
+        setEmail(e.target.value)
+        console.log(email)
+    }
+
   return (
     <footer>
         <section className='top-footer'>
             <div className='tleft'>
             <h2>Keep in touch</h2>
             <p>Curious about new offerings? Sign up for our weekly newsletter and stay informed.</p>
-            <form>
-            <input placeholder='Your email' />
+            <form onSubmit={handleEmail}>
+            <input onChange={handleInput} placeholder='Your email' type='text'/>
             </form>
             </div>
             <div className='tright'>
