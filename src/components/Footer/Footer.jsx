@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './Footer.css'
 import fb from '../../assets/contact/fb.png'
 import insta from '../../assets/contact/insta.png'
@@ -10,19 +10,25 @@ function Footer() {
     const [validEmail, setValidEmail] = useState(false);
    
     const handleInput = (e) => {
-        e.preventDefault();
-        // Use a regular expression to check if the email is valid
+        e.preventDefault()
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-        const isValid = emailPattern.test(email);
-        // Update the validEmail state based on the result of the email validation
-        setValidEmail(isValid);
-        setEmail(''); 
-        // clears the message after a second
-        setTimeout(() => {
-            setValidEmail(false);
-          }, 1055);
-        // write code to unmount set timeout 
+
+        const isValid = emailPattern.test(email)
+        setValidEmail(isValid)
+        setEmail('')
       };
+
+      useEffect(()=>{
+        if (validEmail) {
+            const clearMessage = setTimeout(()=>{
+                setValidEmail(false)
+            }, 1050)
+    
+            return () => {
+                clearInterval(clearMessage)
+            }
+        }
+        },[validEmail])
 
   return (
     <footer>
@@ -33,7 +39,7 @@ function Footer() {
             <form onSubmit={handleInput} >
             <input onChange={(e)=> setEmail(e.target.value)} value={email} placeholder='Your email' type='text'/>
             {
-            validEmail ? <p className='email-message'>Thank you, for subscribing!</p> : <p></p>
+            validEmail && <p className='email-message'>Thank you, for subscribing!</p>
             }
             </form>
             </div>
