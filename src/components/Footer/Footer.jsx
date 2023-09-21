@@ -22,14 +22,12 @@ function Footer() {
     if (validEmail) {
         const clearMessage = setTimeout(()=>{
             setValidEmail(false)
-            console.log('finished counting')
         }, 1050)
     
         return () => {
         clearInterval(clearMessage)
-        console.log('cleared')
         }
-        }
+    }
     },[validEmail])
 
   return (
