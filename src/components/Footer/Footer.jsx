@@ -18,17 +18,19 @@ function Footer() {
         setEmail('')
       };
 
-      useEffect(()=>{
-        if (validEmail) {
-            const clearMessage = setTimeout(()=>{
-                setValidEmail(false)
-            }, 1050)
+    useEffect(()=>{
+    if (validEmail) {
+        const clearMessage = setTimeout(()=>{
+            setValidEmail(false)
+            console.log('finished counting')
+        }, 1050)
     
-            return () => {
-                clearInterval(clearMessage)
-            }
+        return () => {
+        clearInterval(clearMessage)
+        console.log('cleared')
         }
-        },[validEmail])
+        }
+    },[validEmail])
 
   return (
     <footer>
