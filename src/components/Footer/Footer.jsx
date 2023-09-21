@@ -7,14 +7,22 @@ import twitter from '../../assets/contact/twitter.png'
 function Footer() {
 
     const [email, setEmail] = useState('');
-    
-    const handleEmail = (e) => {
-        e.preventDefault()
-    }
+    const [validEmail, setValidEmail] = useState(false);
+   
     const handleInput = (e) => {
-        setEmail(e.target.value)
-        console.log(email)
-    }
+        e.preventDefault();
+        // Use a regular expression to check if the email is valid
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        const isValid = emailPattern.test(email);
+        // Update the validEmail state based on the result of the email validation
+        setValidEmail(isValid);
+        setEmail(''); 
+        // clears the message after a second
+        setTimeout(() => {
+            setValidEmail(false);
+          }, 960);
+        // write code to unmount set timeout 
+      };
 
   return (
     <footer>
@@ -22,8 +30,11 @@ function Footer() {
             <div className='tleft'>
             <h2>Keep in touch</h2>
             <p>Curious about new offerings? Sign up for our weekly newsletter and stay informed.</p>
-            <form onSubmit={handleEmail}>
-            <input onChange={handleInput} placeholder='Your email' type='text'/>
+            <form onSubmit={handleInput} >
+            <input onChange={(e)=> setEmail(e.target.value)} value={email} placeholder='Your email' type='text'/>
+            {
+            validEmail ? <p className='email-message'>Thank you, for subscribing!</p> : <p></p>
+            }
             </form>
             </div>
             <div className='tright'>
