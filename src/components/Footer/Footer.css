@@ -73,6 +73,12 @@
     height: 97px;
     font-size: 1.1rem;
 }
+.email-message {
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: 15px 0px;
+}
 
 @media (max-width: 1000px) {
     .top-footer{

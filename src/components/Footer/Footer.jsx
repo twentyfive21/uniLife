@@ -20,7 +20,7 @@ function Footer() {
         // clears the message after a second
         setTimeout(() => {
             setValidEmail(false);
-          }, 960);
+          }, 1055);
         // write code to unmount set timeout 
       };
 
