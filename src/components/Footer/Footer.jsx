@@ -3,32 +3,51 @@ import './Footer.css'
 import fb from '../../assets/contact/fb.png'
 import insta from '../../assets/contact/insta.png'
 import twitter from '../../assets/contact/twitter.png'
+import axios from 'axios';
 
 function Footer() {
 
     const [email, setEmail] = useState('');
+    const [input, setInput] = useState('');
     const [validEmail, setValidEmail] = useState(false);
+    const url = 'https://unilife-server.herokuapp.com/subscriptions'
+
    
     const handleInput = (e) => {
         e.preventDefault()
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
         const isValid = emailPattern.test(email)
         setValidEmail(isValid)
-        setEmail('')
+        setInput('')
       };
 
+    const handleEmail = (e) => {
+        setEmail(e.target.value)
+        setInput(e.target.value)
+    }
+
     useEffect(()=>{
+    const postData = {
+            email: email
+    }
+
     if (validEmail) {
         const clearMessage = setTimeout(()=>{
             setValidEmail(false)
         }, 1050)
-    
+        
+        axios.post(url, postData)
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
+
+
         return () => {
         clearInterval(clearMessage)
         }
     }
-    },[validEmail])
+    },[email, validEmail])
+
+    
 
   return (
     <footer>
@@ -37,7 +56,7 @@ function Footer() {
             <h2>Keep in touch</h2>
             <p>Curious about new offerings? Sign up for our weekly newsletter and stay informed.</p>
             <form onSubmit={handleInput} >
-            <input onChange={(e)=> setEmail(e.target.value)} value={email} placeholder='Your email' type='text'/>
+            <input onChange={handleEmail} value={input} placeholder='Your email' type='text'/>
             {
             validEmail && <p className='email-message'>Thank you, for subscribing!</p>
             }
