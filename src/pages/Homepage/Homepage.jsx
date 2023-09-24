@@ -3,6 +3,7 @@ import './Homepage.css'
 import Banner from '../../components/Banner/Banner'
 import select from '../../assets/header/select.png'
 import HomeCompare from '../../components/HomeCompare/HomeCompare'
+import {Link} from 'react-router-dom'
 
 function Homepage() {
 
@@ -53,7 +54,7 @@ useEffect(()=>{
           <img src={city.image_url} alt='city' />
           </div>
         )}
-        <button>See All Cities</button>
+       <button><Link to='/allcities' >See All Cities</Link></button>
       </section>
       <section>
         <HomeCompare />

@@ -11,10 +11,12 @@ const navigate = useNavigate()
 
   return (
     <header>
+    <Link to='/'>
     <section id='header' className='header-horz'>
         <img src={house} alt='house icon'/>
         <h2>UniLife</h2>
     </section>
+    </Link>
     <section className='header-right'>
         <div className='header-horz'>
         <img src={heart} alt='heart'/>
