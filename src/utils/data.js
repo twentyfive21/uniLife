@@ -3,6 +3,9 @@ import compare from '../assets/middle/compare.png'
 import bills from '../assets/middle/bills.png'
 import best from '../assets/middle/best.png'
 import heart from '../assets/middle/heart.png'
+import homeBanner from '../assets/header/banner1.jpeg'
+import allBanner from '../assets/header/banner2.jpeg'
+import detailBanner from '../assets/header/banner3.jpg'
 const data = [
     {
        info: 
@@ -42,6 +45,30 @@ const data = [
             title: 'Your favorite',
             text: 'Shortlist your favourite properties and send enquiries in one click.'
          },
+      ]
+    }, 
+    {
+      info: 
+      [
+         {
+            id: 5,
+            img: homeBanner,
+            heading:"Find student homes with bills included",
+            text: "A simple and faster way to search for student accommodation"
+         },
+         {
+            id: 6,
+            img: allBanner,
+            heading:"Student Accomodation",
+            text: "UniLife have student accommodation available across the UK. Whatever you’re after, we can help you find the right student accommodation for you."
+         },
+         {
+            id: 7,
+            img: detailBanner,
+            heading:"Search Accomodation",
+            text: "Whatever you’re after, we can help you find the right student accommodation for you."
+         }
+
       ]
     }
 
