@@ -4,6 +4,7 @@ import Banner from '../../components/Banner/Banner'
 import select from '../../assets/header/select.png'
 import HomeCompare from '../../components/HomeCompare/HomeCompare'
 import {Link} from 'react-router-dom'
+import data from '../../utils/data'
 
 function Homepage() {
 
@@ -29,7 +30,7 @@ useEffect(()=>{
   return (
     <div>
     <section className='header-box'>
-    <Banner />
+    <Banner data={data[2].info[0]}/>
     <div className='form-container'>
     <form>
       <img src={select} className='arrow'alt='arrow'/>
