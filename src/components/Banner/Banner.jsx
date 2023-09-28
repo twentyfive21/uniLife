@@ -1,14 +1,13 @@
 import React from 'react'
 import './Banner.css'
-import banner from '../../assets/header/banner1.jpeg'
 
-function Banner() {
+function Banner({data}) {
   return (
     <div className='banner-container'>
-    <img src={banner} alt='banner' />
+    <img src={data.img} alt='banner' />
     <div className='banner-text'>
-      <h1>Find student homes with bills included</h1>
-      <p>A simple and faster way to search for student accommodation</p>
+      <h1>{data.heading}</h1>
+      <p>{data.text}</p>
     </div>
     </div>
   )
