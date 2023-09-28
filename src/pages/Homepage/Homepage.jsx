@@ -1,32 +1,16 @@
-import {React, useEffect, useState} from 'react'
+import {React, useContext, useEffect, useState} from 'react'
 import './Homepage.css'
 import Banner from '../../components/Banner/Banner'
 import select from '../../assets/header/select.png'
 import HomeCompare from '../../components/HomeCompare/HomeCompare'
 import {Link} from 'react-router-dom'
 import data from '../../utils/data'
+import { CityContext } from '../../contexts/CityContext'
 
 function Homepage() {
 
-const [error, setError] = useState(false)
-const [cities, setCities] = useState([]);
+const {error, cities} = useContext(CityContext) 
   
-useEffect(()=>{
-   const fetchData = async () =>{
-        try{
-            const res = await fetch('https://unilife-server.herokuapp.com/cities?limit=20');
-            const json = await res.json();
-            console.log(json)
-            setCities(json.response)
-        }
-        catch(err){
-            setError(true)
-            console.log(err);
-        }
-    }
-   fetchData();
-}, [])
-
   return (
     <div>
     <section className='header-box'>
