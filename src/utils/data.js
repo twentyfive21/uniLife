@@ -60,7 +60,7 @@ const data = [
             id: 6,
             img: allBanner,
             heading:"Student Accomodation",
-            text: "UniLife have student accommodation available across the UK. Whatever you’re after, we can help you find the right student accommodation for you."
+            text: "UniLife has student accommodation available across the UK. Whatever you’re after, we can help you find the right student accommodation for you."
          },
          {
             id: 7,
