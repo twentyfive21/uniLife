@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage/Homepage'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer';
 import AllCities from './pages/AllCities/AllCities';
+import CityContextProvider from './contexts/CityContext';
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
   return (
     <>
     <BrowserRouter>
+    
+    <CityContextProvider>
     <Header/>
 
     <Routes>
@@ -20,6 +23,8 @@ function App() {
     </Routes>
     
     <Footer />
+    </CityContextProvider>
+
     </BrowserRouter>
     </>
   )
