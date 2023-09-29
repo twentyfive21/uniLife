@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 7px 50px;
+    height: 6vh;
 }
 header h2 {
     font-weight: 400;
