@@ -10,7 +10,7 @@ import { CityContext } from '../../contexts/CityContext'
 function Homepage() {
 
 const {error, cities} = useContext(CityContext) 
-  
+
   return (
     <div>
     <section className='header-box'>
