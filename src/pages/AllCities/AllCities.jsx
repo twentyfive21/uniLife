@@ -13,9 +13,9 @@ function AllCities() {
     <section>
       {
         cities.map(city => 
-        <div key={city._id} className='allcities-selection'>
+        <button key={city._id} className='allcities-selection'>
           <p>{city.name}</p>
-        </div>)
+        </button>)
       }
     </section>
     {
