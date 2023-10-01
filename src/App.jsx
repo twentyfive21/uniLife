@@ -6,6 +6,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer';
 import AllCities from './pages/AllCities/AllCities';
 import CityContextProvider from './contexts/CityContext';
+import CityDetails from './pages/CityDetails/CityDetails';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <Routes>
     <Route path='/' element={<Homepage />} />
     <Route path='/allcities' element={<AllCities />} />
+    <Route path='/citydetails' element={<CityDetails />} />
     </Routes>
     
     <Footer />
