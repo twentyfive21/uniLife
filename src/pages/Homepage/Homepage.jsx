@@ -39,7 +39,9 @@ const {error, cities} = useContext(CityContext)
           <img src={city.image_url} alt='city' />
           </div>
         )}
-       <button><Link to='/allcities' >See All Cities</Link></button>
+       <button>
+        <Link to='/allcities'>See All Cities</Link>
+      </button>
       </section>
       <section>
         <HomeCompare />
