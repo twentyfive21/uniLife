@@ -1,0 +1,30 @@
+.citydetail-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 176px;
+    flex-direction: row;
+    background-color: pink;
+    border-radius: 24px;
+    width: 90vw;
+    margin: 0 auto;
+}
+.citydetail-form select {
+    height: 48px;
+    width: 15vw;
+    border-radius: 10px;
+    color: #CED3D8;
+    border: 1px solid #CED3D8;
+}
+.citydetail-form fieldset {
+    border: none;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.citydetail-form label {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
