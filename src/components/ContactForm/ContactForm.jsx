@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './ContactForm.css'
+import mail from '../../assets/contact/contactForm.png'
 
 function ContactForm() {
   return (
@@ -7,7 +8,7 @@ function ContactForm() {
         <div>
           <div>
             <h2>Contact Us</h2>
-            <p>image</p>
+            <img src={mail} alt='mail icon'/>
           </div>
           <p>Feel free to contact us if you have any questions. Looking forward to hear from you.</p>
         </div>
