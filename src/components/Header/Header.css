@@ -7,6 +7,11 @@ header {
     padding: 7px 50px;
     height: 6vh;
 }
+header button {
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+}
 header h2 {
     font-weight: 400;
     margin-top: 6px;
