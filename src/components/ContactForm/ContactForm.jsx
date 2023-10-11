@@ -5,14 +5,14 @@ import mail from '../../assets/contact/contactForm.png'
 function ContactForm() {
   return (
     <div className='contact-container'>
-        <div>
-          <div>
+        <div className='contact-header-container'>
+          <div className='contact-header-box'>
             <h2>Contact Us</h2>
             <img src={mail} alt='mail icon'/>
           </div>
-          <p>Feel free to contact us if you have any questions. Looking forward to hear from you.</p>
+          <p>Feel free to contact us if you have any questions. <br/> Looking forward to hear from you.</p>
         </div>
-        <form>
+        <form className='form-container'>
         <div>
           <label htmlFor='name'>Name</label>
             <input type='text' id='name' name='name' placeholder='Enter your name'/>
