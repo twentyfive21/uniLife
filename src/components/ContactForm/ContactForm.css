@@ -1,4 +1,20 @@
 .contact-container{
-    background-color: white;
+    background-color: tan;
+    height: 450px;
+    padding: 0px 15px;
+}
+/* row for desktop and do column for ipad and mobile devices */
+.form-container {
+    display: flex;
+}
+.contact-header-container {
     
+}
+.contact-header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items:first baseline;
+}
+.contact-header-container img {
+    height: 55px;
 }
