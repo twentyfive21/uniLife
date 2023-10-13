@@ -14,11 +14,11 @@
 
 * API Integration: Retrieve data from an API and display it within the application to provide dynamic and up-to-date content.
 
-* Error handling : When the API has failed I made sure to handle the erorr properly so the user has a pleasent experience. 
+* Error handling: When the API has failed I made sure to handle the erorr properly so the user has a pleasent experience. 
 ---
 ### Api link : https://unilife-server.herokuapp.com/#all-cities
 
 ---
 ### Credits 
 * Photo by jimmy teoh from Pexels: https://www.pexels.com/photo/lighted-buildings-nighttime-951539/
-* Photo by EKATERINA  BOLOVTSOVA: https://www.pexels.com/photo/young-woman-surfing-laptop-in-kitchen-4049990/
+* Photo by EKATERINA BOLOVTSOVA: https://www.pexels.com/photo/young-woman-surfing-laptop-in-kitchen-4049990/
